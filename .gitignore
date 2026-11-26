@@ -45,3 +45,12 @@ Thumbs.db
 #--------------------------------
 Resources/php.ini
 Project/Trash/
+
+#--------------------------------
+# Tools provisioned by the 4D skills (4dtools). Do NOT ignore the whole tools/ folder.
+#--------------------------------
+/tools/4dcatalog/
+/tools/4dform/
+/tools/4dlsp/
+/tools/4dlang/
+/tools/4dcli/

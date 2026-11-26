@@ -16,7 +16,7 @@
 	"events": [
 		"onLoad"
 	],
-	"windowTitle": "window title",
+	"windowTitle": ":xliff:ProjectList_WindowTitle",
 	"destination": "listScreen",
 	"pages": [
 		{
@@ -35,7 +35,7 @@
 				},
 				"label_ID": {
 					"type": "text",
-					"text": "ID",
+					"text": ":xliff:Label_ID",
 					"top": 10,
 					"left": 10,
 					"height": 17,
@@ -62,7 +62,7 @@
 				},
 				"label_name": {
 					"type": "text",
-					"text": "name",
+					"text": ":xliff:Label_Name",
 					"top": 10,
 					"left": 270,
 					"height": 17,
@@ -87,7 +87,7 @@
 				},
 				"label_manager": {
 					"type": "text",
-					"text": "manager",
+					"text": ":xliff:Label_Manager",
 					"top": 10,
 					"left": 530,
 					"height": 17,
@@ -112,7 +112,7 @@
 				},
 				"label_status": {
 					"type": "text",
-					"text": "status",
+					"text": ":xliff:Label_Status",
 					"top": 10,
 					"left": 790,
 					"height": 17,
@@ -122,12 +122,13 @@
 				},
 				"field_status": {
 					"type": "input",
-					"dataSource": "[Project:3]status:4",
+					"dataSource": "StatusLabel([Project:3]status:4)",
 					"top": 37,
 					"left": 790,
 					"width": 250,
 					"height": 17,
-					"borderStyle": "none"
+					"borderStyle": "none",
+					"enterable": false
 				},
 				"line_4": {
 					"type": "line",
@@ -137,7 +138,7 @@
 				},
 				"label_notificationsEnabled": {
 					"type": "text",
-					"text": "notificationsEnabled",
+					"text": ":xliff:Label_NotificationsEnabled",
 					"top": 10,
 					"left": 1050,
 					"height": 17,
@@ -149,7 +150,7 @@
 					"type": "checkbox",
 					"dataSource": "[Project:3]notificationsEnabled:5",
 					"dataSourceTypeHint": "boolean",
-					"text": "Yes",
+					"text": ":xliff:Label_Yes",
 					"top": 37,
 					"left": 1050,
 					"width": 250,
@@ -164,7 +165,7 @@
 				},
 				"label_clientValidationRequired": {
 					"type": "text",
-					"text": "clientValidationRequired",
+					"text": ":xliff:Label_ClientValidationRequired",
 					"top": 10,
 					"left": 1310,
 					"height": 17,
@@ -176,7 +177,7 @@
 					"type": "checkbox",
 					"dataSource": "[Project:3]clientValidationRequired:6",
 					"dataSourceTypeHint": "boolean",
-					"text": "Yes",
+					"text": ":xliff:Label_Yes",
 					"top": 37,
 					"left": 1310,
 					"width": 250,
@@ -191,7 +192,7 @@
 				},
 				"label_progress": {
 					"type": "text",
-					"text": "progress",
+					"text": ":xliff:Label_Progress",
 					"top": 10,
 					"left": 1570,
 					"height": 17,

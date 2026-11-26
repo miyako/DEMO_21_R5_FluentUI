@@ -3,7 +3,7 @@ var $event:=FORM Event:C1606
 Case of 
 	: ($event.code=On Load:K2:1)
 		
-		SET WINDOW TITLE:C213("List of Projects")
+		SET WINDOW TITLE:C213(Localized string("ProjectList_WindowTitle"))
 		LISTBOX SELECT ROWS:C1715(*; "ListBox"; Form:C1466.projects.slice(0; 1); lk replace selection:K53:1)
 		
 		// Initialize clear button visibility based on search content
@@ -13,7 +13,7 @@ Case of
 		
 		// Double-click on listbox
 		If ($event.objectName="ListBox")
-			// Call the onEditContact method of the contact detail form
+			// Open the selected project in the detail form
 			Form:C1466.onEditProject()
 		End if 
 		

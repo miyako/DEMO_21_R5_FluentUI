@@ -2,7 +2,7 @@
 	"bars": [
 		{
 			"id": 1,
-			"name": "Barre #1",
+			"name": "Main",
 			"items": [
 				{
 					"link": 32001
@@ -19,14 +19,14 @@
 	"menus": [
 		{
 			"link": 32001,
-			"title": ":xliff:CommonMenuFile",
+			"title": ":xliff:Menu_File",
 			"items": [
 				{
-					"title": "Demo Project Form",
+					"title": ":xliff:MenuItemStartScreen",
 					"method": "__start"
 				},
 				{
-					"title": ":xliff:CommonMenuItemQuit",
+					"title": ":xliff:MenuItem_Quit",
 					"shortcutAccel": true,
 					"shortcutKey": "Q",
 					"action": "quit"
@@ -35,10 +35,10 @@
 		},
 		{
 			"link": 32002,
-			"title": ":xliff:CommonMenuEdit",
+			"title": ":xliff:Menu_Edit",
 			"items": [
 				{
-					"title": ":xliff:CommonMenuItemUndo",
+					"title": ":xliff:MenuItem_Undo",
 					"shortcutAccel": true,
 					"shortcutKey": "Z",
 					"action": "undo"
@@ -48,29 +48,29 @@
 					"isSeparator": true
 				},
 				{
-					"title": ":xliff:CommonMenuItemCut",
+					"title": ":xliff:MenuItem_Cut",
 					"shortcutAccel": true,
 					"shortcutKey": "X",
 					"action": "cut"
 				},
 				{
-					"title": ":xliff:CommonMenuItemCopy",
+					"title": ":xliff:MenuItem_Copy",
 					"shortcutAccel": true,
 					"shortcutKey": "C",
 					"action": "copy"
 				},
 				{
-					"title": ":xliff:CommonMenuItemPaste",
+					"title": ":xliff:MenuItem_Paste",
 					"shortcutAccel": true,
 					"shortcutKey": "V",
 					"action": "paste"
 				},
 				{
-					"title": ":xliff:CommonMenuItemClear",
+					"title": ":xliff:MenuItem_Clear",
 					"action": "clear"
 				},
 				{
-					"title": ":xliff:CommonMenuItemSelectAll",
+					"title": ":xliff:MenuItem_SelectAll",
 					"shortcutAccel": true,
 					"shortcutKey": "A",
 					"action": "selectAll"
@@ -80,17 +80,17 @@
 					"isSeparator": true
 				},
 				{
-					"title": ":xliff:CommonMenuItemShowClipboard",
+					"title": ":xliff:MenuItem_ShowClipboard",
 					"action": "showClipboard"
 				}
 			]
 		},
 		{
 			"link": 32003,
-			"title": ":xliff:CommonMenuMode",
+			"title": ":xliff:Menu_Mode",
 			"items": [
 				{
-					"title": ":xliff:CommonMenuItemDesign",
+					"title": ":xliff:MenuItem_Design",
 					"action": "design"
 				}
 			]

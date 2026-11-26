@@ -15,7 +15,7 @@
 		"onLoad",
 		"onResize"
 	],
-	"windowTitle": "Welcome",
+	"windowTitle": ":xliff:Start_WindowTitle",
 	"destination": "detailScreen",
 	"pages": [
 		{
@@ -25,19 +25,33 @@
 			"objects": {
 				"Title_text": {
 					"type": "text",
-					"text": "Demo Fluent UI",
+					"text": ":xliff:StartScreen_Title",
 					"top": 20,
 					"left": 20,
-					"width": 520,
+					"width": 360,
 					"height": 29,
 					"fontSize": 24,
 					"verticalAlign": "middle",
-					"textAlign": "center",
+					"textAlign": "left",
 					"sizingX": "grow"
+				},
+				"language": {
+					"type": "dropdown",
+					"top": 21,
+					"left": 400,
+					"width": 140,
+					"dataSource": "Form:C1466.language",
+					"tooltip": ":xliff:StartScreen_LanguageTooltip",
+					"sizingX": "move",
+					"class": "default",
+					"events": [
+						"onDataChange"
+					],
+					"method": "ObjectMethods/language.4dm"
 				},
 				"project_btn": {
 					"type": "button",
-					"text": "Projet Forms ",
+					"text": ":xliff:StartScreen_ProjectForms",
 					"top": 80,
 					"left": 20,
 					"width": 250,
@@ -50,15 +64,12 @@
 					"sizingY": "grow",
 					"sizingX": "grow",
 					"style": "custom",
-					"borderStyle": "custom",
-					"borderRadius": 6,
-					"borderFillColor": "#058981",
-					"stroke": "#FFFFFF",
-					"fontSize": 24
+					"class": "tile tile-projects",
+					"borderStyle": "custom"
 				},
 				"list_btn": {
 					"type": "button",
-					"text": "List Form",
+					"text": ":xliff:StartScreen_TableForms",
 					"top": 80,
 					"left": 290,
 					"width": 250,
@@ -71,13 +82,10 @@
 					"sizingX": "grow",
 					"sizingY": "grow",
 					"style": "custom",
-					"borderStyle": "custom",
-					"borderFillColor": "#1F5F9D",
-					"stroke": "#FFFFFF",
-					"fontSize": 24,
-					"borderRadius": 6
+					"class": "tile tile-tables",
+					"borderStyle": "custom"
 				},
-				"Button": {
+				"generate_btn": {
 					"type": "button",
 					"top": 350,
 					"left": 20,
@@ -88,14 +96,11 @@
 					],
 					"sizingX": "grow",
 					"sizingY": "grow",
-					"method": "ObjectMethods/Button.4dm",
-					"text": "Generate Data",
-					"stroke": "#FFFFFF",
-					"fontSize": 24,
+					"method": "ObjectMethods/generate_btn.4dm",
+					"text": ":xliff:StartScreen_GenerateData",
 					"style": "custom",
-					"borderStyle": "custom",
-					"borderRadius": 6,
-					"borderFillColor": "#DDA0DD"
+					"class": "tile tile-generate",
+					"borderStyle": "custom"
 				}
 			}
 		}

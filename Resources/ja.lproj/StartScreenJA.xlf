@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+	<file datatype="plaintext" original="StartScreen" source-language="en" target-language="ja">
+		<body>
+			<trans-unit id="StartScreen_Title" resname="StartScreen_Title">
+				<source>4D 21 R5 — Fluent UI</source>
+				<target>4D 21 R5 — Fluent UI</target>
+			</trans-unit>
+			<trans-unit id="StartScreen_ProjectForms" resname="StartScreen_ProjectForms">
+				<source>Project Forms&#13;ORDA + form classes</source>
+				<target>プロジェクトフォーム&#13;ORDA + フォームクラス</target>
+			</trans-unit>
+			<trans-unit id="StartScreen_TableForms" resname="StartScreen_TableForms">
+				<source>Table Forms&#13;classic input &amp; output</source>
+				<target>テーブルフォーム&#13;従来型の入出力</target>
+			</trans-unit>
+			<trans-unit id="StartScreen_GenerateData" resname="StartScreen_GenerateData">
+				<source>Generate Sample Data</source>
+				<target>サンプルデータを生成</target>
+			</trans-unit>
+			<trans-unit id="StartScreen_LanguageTooltip" resname="StartScreen_LanguageTooltip">
+				<source>Display language</source>
+				<target>表示言語</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

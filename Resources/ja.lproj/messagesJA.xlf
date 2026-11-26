@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+	<file datatype="plaintext" original="messages" source-language="en" target-language="ja">
+		<body>
+			<trans-unit id="Start_WindowTitle" resname="Start_WindowTitle">
+				<source>Fluent UI Demo</source>
+				<target>Fluent UI デモ</target>
+			</trans-unit>
+			<trans-unit id="Status_ToDo" resname="Status_ToDo">
+				<source>To Do</source>
+				<target>未着手</target>
+			</trans-unit>
+			<trans-unit id="Status_Pending" resname="Status_Pending">
+				<source>Pending</source>
+				<target>保留中</target>
+			</trans-unit>
+			<trans-unit id="Status_InProgress" resname="Status_InProgress">
+				<source>In Progress</source>
+				<target>進行中</target>
+			</trans-unit>
+			<trans-unit id="Status_Completed" resname="Status_Completed">
+				<source>Completed</source>
+				<target>完了</target>
+			</trans-unit>
+			<trans-unit id="ProjectList_WindowTitle" resname="ProjectList_WindowTitle">
+				<source>Projects</source>
+				<target>プロジェクト一覧</target>
+			</trans-unit>
+			<trans-unit id="ProjectDetail_WindowTitleNew" resname="ProjectDetail_WindowTitleNew">
+				<source>New Project</source>
+				<target>新規プロジェクト</target>
+			</trans-unit>
+			<trans-unit id="ProjectDetail_WindowTitle" resname="ProjectDetail_WindowTitle">
+				<source>Project: {1}</source>
+				<target>プロジェクト: {1}</target>
+			</trans-unit>
+			<trans-unit id="TaskDetail_WindowTitle" resname="TaskDetail_WindowTitle">
+				<source>Task: {1}</source>
+				<target>タスク: {1}</target>
+			</trans-unit>
+			<trans-unit id="ProjectOutput_Count" resname="ProjectOutput_Count">
+				<source>{1} of {2} projects</source>
+				<target>プロジェクト {2} 件中 {1} 件</target>
+			</trans-unit>
+			<trans-unit id="TaskOutput_Count" resname="TaskOutput_Count">
+				<source>{1} tasks</source>
+				<target>タスク {1} 件</target>
+			</trans-unit>
+			<trans-unit id="AlertProjectNameMandatory" resname="AlertProjectNameMandatory">
+				<source>The project name is mandatory.</source>
+				<target>プロジェクト名を入力してください。</target>
+			</trans-unit>
+			<trans-unit id="DeleteProject_WindowTitle" resname="DeleteProject_WindowTitle">
+				<source>Delete Project</source>
+				<target>プロジェクトの削除</target>
+			</trans-unit>
+			<trans-unit id="DeleteProject_Title" resname="DeleteProject_Title">
+				<source>Delete the project "{1}"?</source>
+				<target>プロジェクト「{1}」を削除しますか？</target>
+			</trans-unit>
+			<trans-unit id="DeleteProject_TitleDefault" resname="DeleteProject_TitleDefault">
+				<source>Delete this project?</source>
+				<target>このプロジェクトを削除しますか？</target>
+			</trans-unit>
+			<trans-unit id="DeleteProject_Message" resname="DeleteProject_Message">
+				<source>You can't undo this action.</source>
+				<target>この操作は取り消せません。</target>
+			</trans-unit>
+			<trans-unit id="ConfirmGenerateData" resname="ConfirmGenerateData">
+				<source>Replace all projects and tasks with new sample data?</source>
+				<target>すべてのプロジェクトとタスクを新しいサンプルデータに置き換えますか？</target>
+			</trans-unit>
+			<trans-unit id="AlertButtonGenerate" resname="AlertButtonGenerate">
+				<source>Generate</source>
+				<target>生成</target>
+			</trans-unit>
+			<trans-unit id="AlertSampleDataGenerated" resname="AlertSampleDataGenerated">
+				<source>{1} projects and {2} tasks were generated.</source>
+				<target>プロジェクト {1} 件とタスク {2} 件を生成しました。</target>
+			</trans-unit>
+			<trans-unit id="Button_Cancel" resname="Button_Cancel">
+				<source>Cancel</source>
+				<target>キャンセル</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

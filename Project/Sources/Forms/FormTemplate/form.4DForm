@@ -26,7 +26,6 @@
 		"onTimer",
 		"onBoundVariableChange"
 	],
-	"windowTitle": "window title",
 	"destination": "detailScreen",
 	"pages": [
 		{
@@ -57,7 +56,7 @@
 					"fontSize": 12,
 					"class": "toolbar-button",
 					"iconFrames": 4,
-					"tooltip": "Add"
+					"tooltip": ":xliff:Toolbar_Add"
 				},
 				"bDrop": {
 					"type": "button",
@@ -73,7 +72,7 @@
 					"fontSize": 12,
 					"class": "toolbar-button",
 					"iconFrames": 4,
-					"tooltip": "Delete"
+					"tooltip": ":xliff:Toolbar_Delete"
 				},
 				"bPrint": {
 					"type": "button",
@@ -90,7 +89,7 @@
 					"fontSize": 12,
 					"class": "toolbar-button",
 					"iconFrames": 4,
-					"tooltip": "Print"
+					"tooltip": ":xliff:Toolbar_Print"
 				},
 				"bEdit": {
 					"type": "button",
@@ -106,7 +105,7 @@
 					"fontSize": 12,
 					"class": "toolbar-button",
 					"iconFrames": 4,
-					"tooltip": "Edit"
+					"tooltip": ":xliff:Toolbar_Edit"
 				},
 				"bCancel": {
 					"type": "button",
@@ -122,7 +121,7 @@
 						"onClick"
 					],
 					"iconFrames": 4,
-					"tooltip": "Cancel"
+					"tooltip": ":xliff:Toolbar_Cancel"
 				},
 				"bValidate": {
 					"type": "button",
@@ -138,7 +137,7 @@
 						"onClick"
 					],
 					"iconFrames": 4,
-					"tooltip": "Save"
+					"tooltip": ":xliff:Toolbar_Save"
 				},
 				"bFirstRecord": {
 					"type": "button",
@@ -154,7 +153,7 @@
 						"onClick"
 					],
 					"iconFrames": 4,
-					"tooltip": "First"
+					"tooltip": ":xliff:Toolbar_First"
 				},
 				"bPreviousRecord": {
 					"type": "button",
@@ -170,7 +169,7 @@
 						"onClick"
 					],
 					"iconFrames": 4,
-					"tooltip": "Previous"
+					"tooltip": ":xliff:Toolbar_Previous"
 				},
 				"bNextRecord": {
 					"type": "button",
@@ -186,7 +185,7 @@
 						"onClick"
 					],
 					"iconFrames": 4,
-					"tooltip": "Next"
+					"tooltip": ":xliff:Toolbar_Next"
 				},
 				"bLastRecord": {
 					"type": "button",
@@ -202,7 +201,7 @@
 						"onClick"
 					],
 					"iconFrames": 4,
-					"tooltip": "Last"
+					"tooltip": ":xliff:Toolbar_Last"
 				},
 				"bBack": {
 					"type": "button",
@@ -216,7 +215,7 @@
 						"onClick"
 					],
 					"class": "toolbar-button",
-					"tooltip": "Back",
+					"tooltip": ":xliff:Toolbar_Back",
 					"action": "cancel"
 				}
 			}

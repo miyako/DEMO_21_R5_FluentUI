@@ -14,7 +14,7 @@
 		"onValidate",
 		"onClick"
 	],
-	"windowTitle": "window title",
+	"windowTitle": ":xliff:ProjectDetail_WindowTitleNew",
 	"destination": "detailScreen",
 	"pages": [
 		{
@@ -40,7 +40,7 @@
 					"events": [
 						"onClick"
 					],
-					"tooltip": "Cancel"
+					"tooltip": ":xliff:Toolbar_Cancel"
 				},
 				"bValidate": {
 					"type": "button",
@@ -55,7 +55,7 @@
 					"events": [
 						"onClick"
 					],
-					"tooltip": "Save"
+					"tooltip": ":xliff:Toolbar_Save"
 				},
 				"bFirstRecord": {
 					"type": "button",
@@ -70,7 +70,7 @@
 					"events": [
 						"onClick"
 					],
-					"tooltip": "First project"
+					"tooltip": ":xliff:Toolbar_FirstProject"
 				},
 				"bPreviousRecord": {
 					"type": "button",
@@ -85,7 +85,7 @@
 					"events": [
 						"onClick"
 					],
-					"tooltip": "Previous project"
+					"tooltip": ":xliff:Toolbar_PreviousProject"
 				},
 				"bNextRecord": {
 					"type": "button",
@@ -100,7 +100,7 @@
 					"events": [
 						"onClick"
 					],
-					"tooltip": "Next project"
+					"tooltip": ":xliff:Toolbar_NextProject"
 				},
 				"bLastRecord": {
 					"type": "button",
@@ -115,7 +115,7 @@
 					"events": [
 						"onClick"
 					],
-					"tooltip": "Last project"
+					"tooltip": ":xliff:Toolbar_LastProject"
 				},
 				"bPrint": {
 					"type": "button",
@@ -131,7 +131,7 @@
 						"onClick"
 					],
 					"class": "toolbar-button",
-					"tooltip": "Print"
+					"tooltip": ":xliff:Toolbar_Print"
 				},
 				"ToolbarBg1": {
 					"type": "rectangle",
@@ -148,7 +148,7 @@
 			"objects": {
 				"Text": {
 					"type": "text",
-					"text": "Project Name",
+					"text": ":xliff:Label_ProjectName",
 					"top": 100,
 					"left": 40,
 					"width": 215,
@@ -169,7 +169,7 @@
 				},
 				"Text1": {
 					"type": "text",
-					"text": "Comment",
+					"text": ":xliff:Label_Comment",
 					"top": 300,
 					"left": 40,
 					"width": 215,
@@ -188,7 +188,7 @@
 				},
 				"Text2": {
 					"type": "text",
-					"text": "Manager",
+					"text": ":xliff:Label_Manager",
 					"top": 160,
 					"left": 40,
 					"width": 215,
@@ -207,7 +207,7 @@
 				},
 				"Check Box": {
 					"type": "checkbox",
-					"text": "Notifications enabled",
+					"text": ":xliff:Label_NotificationsEnabled",
 					"top": 252,
 					"left": 40,
 					"width": 341,
@@ -219,7 +219,7 @@
 				},
 				"Check Box1": {
 					"type": "checkbox",
-					"text": "Client validation required",
+					"text": ":xliff:Label_ClientValidationRequired",
 					"top": 230,
 					"left": 40,
 					"width": 341,
@@ -231,7 +231,7 @@
 				},
 				"Text3": {
 					"type": "text",
-					"text": "Avancement",
+					"text": ":xliff:Label_Progress",
 					"top": 405,
 					"left": 40,
 					"width": 215,
@@ -261,54 +261,61 @@
 					"columns": [
 						{
 							"header": {
-								"text": "Title",
+								"text": ":xliff:Label_Title",
 								"name": "Header1",
 								"class": "data-grid-header"
 							},
 							"name": "Column1",
 							"footer": {
-								"name": "Footer1"
+								"name": "Footer1",
+								"truncateMode": "none"
 							},
-							"width": 250,
+							"width": 235,
 							"dataSource": "This:C1470.title",
 							"maxWidth": 400,
-							"minWidth": 250
+							"minWidth": 200,
+							"truncateMode": "none"
 						},
 						{
 							"header": {
 								"name": "Header3",
-								"text": "Assignee",
+								"text": ":xliff:Label_Assignee",
 								"class": "data-grid-header"
 							},
 							"name": "Column3",
 							"footer": {
-								"name": "Footer3"
+								"name": "Footer3",
+								"truncateMode": "none"
 							},
 							"dataSource": "This:C1470.assignee",
 							"minWidth": 140,
 							"width": 140,
-							"maxWidth": 400
+							"maxWidth": 400,
+							"truncateMode": "none"
 						},
 						{
 							"header": {
 								"name": "Header2",
-								"text": "Status",
+								"text": ":xliff:Label_Status",
 								"class": "data-grid-header"
 							},
 							"name": "Column2",
 							"footer": {
-								"name": "Footer2"
+								"name": "Footer2",
+								"truncateMode": "none"
 							},
-							"dataSource": "This:C1470.status",
+							"dataSource": "This:C1470.statusLabel",
 							"minWidth": 90,
 							"width": 90,
-							"maxWidth": 90
+							"maxWidth": 90,
+							"truncateMode": "none"
 						}
-					]
+					],
+					"resizingMode": "legacy"
 				},
 				"Text4": {
 					"type": "text",
-					"text": "Tasks",
+					"text": ":xliff:Label_Tasks",
 					"top": 480,
 					"left": 40,
 					"width": 215,
@@ -335,7 +342,7 @@
 				},
 				"Text5": {
 					"type": "text",
-					"text": "Status",
+					"text": ":xliff:Label_Status",
 					"top": 100,
 					"left": 370,
 					"width": 148,
@@ -347,14 +354,14 @@
 				"popStatus": {
 					"type": "dropdown",
 					"left": 370,
-					"top": 121,
+					"top": 119,
 					"width": 148,
-					"height": 23,
 					"events": [
 						"onDataChange"
 					],
 					"dataSource": "Form:C1466.myDrop",
-					"sizingX": "move"
+					"sizingX": "move",
+					"class": "default"
 				}
 			},
 			"entryOrder": [

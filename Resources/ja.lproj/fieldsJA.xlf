@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+	<file datatype="plaintext" original="fields" source-language="en" target-language="ja">
+		<body>
+			<trans-unit id="Label_Project" resname="Label_Project">
+				<source>Project</source>
+				<target>プロジェクト</target>
+			</trans-unit>
+			<trans-unit id="Label_Task" resname="Label_Task">
+				<source>Task</source>
+				<target>タスク</target>
+			</trans-unit>
+			<trans-unit id="Label_ProjectName" resname="Label_ProjectName">
+				<source>Project Name</source>
+				<target>プロジェクト名</target>
+			</trans-unit>
+			<trans-unit id="Label_Name" resname="Label_Name">
+				<source>Name</source>
+				<target>名前</target>
+			</trans-unit>
+			<trans-unit id="Label_Manager" resname="Label_Manager">
+				<source>Manager</source>
+				<target>責任者</target>
+			</trans-unit>
+			<trans-unit id="Label_Status" resname="Label_Status">
+				<source>Status</source>
+				<target>ステータス</target>
+			</trans-unit>
+			<trans-unit id="Label_Progress" resname="Label_Progress">
+				<source>Progress</source>
+				<target>進捗</target>
+			</trans-unit>
+			<trans-unit id="Label_ProgressTracking" resname="Label_ProgressTracking">
+				<source>Progress Tracking</source>
+				<target>進捗状況</target>
+			</trans-unit>
+			<trans-unit id="Label_Validation" resname="Label_Validation">
+				<source>Validation</source>
+				<target>顧客承認</target>
+			</trans-unit>
+			<trans-unit id="Label_ClientValidationRequired" resname="Label_ClientValidationRequired">
+				<source>Client validation required</source>
+				<target>顧客の承認が必要</target>
+			</trans-unit>
+			<trans-unit id="Label_NotificationsEnabled" resname="Label_NotificationsEnabled">
+				<source>Notifications enabled</source>
+				<target>通知を有効にする</target>
+			</trans-unit>
+			<trans-unit id="Label_Comment" resname="Label_Comment">
+				<source>Comment</source>
+				<target>コメント</target>
+			</trans-unit>
+			<trans-unit id="Label_Tasks" resname="Label_Tasks">
+				<source>Tasks</source>
+				<target>タスク</target>
+			</trans-unit>
+			<trans-unit id="Label_Title" resname="Label_Title">
+				<source>Title</source>
+				<target>タイトル</target>
+			</trans-unit>
+			<trans-unit id="Label_Assignee" resname="Label_Assignee">
+				<source>Assignee</source>
+				<target>担当者</target>
+			</trans-unit>
+			<trans-unit id="Label_ID" resname="Label_ID">
+				<source>ID</source>
+				<target>ID</target>
+			</trans-unit>
+			<trans-unit id="Label_Yes" resname="Label_Yes">
+				<source>Yes</source>
+				<target>はい</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+	<file datatype="plaintext" original="messages" source-language="en" target-language="en">
+		<body>
+			<trans-unit id="Start_WindowTitle" resname="Start_WindowTitle">
+				<source>Fluent UI Demo</source>
+				<target>Fluent UI Demo</target>
+			</trans-unit>
+			<trans-unit id="Status_ToDo" resname="Status_ToDo">
+				<source>To Do</source>
+				<target>To Do</target>
+			</trans-unit>
+			<trans-unit id="Status_Pending" resname="Status_Pending">
+				<source>Pending</source>
+				<target>Pending</target>
+			</trans-unit>
+			<trans-unit id="Status_InProgress" resname="Status_InProgress">
+				<source>In Progress</source>
+				<target>In Progress</target>
+			</trans-unit>
+			<trans-unit id="Status_Completed" resname="Status_Completed">
+				<source>Completed</source>
+				<target>Completed</target>
+			</trans-unit>
+			<trans-unit id="ProjectList_WindowTitle" resname="ProjectList_WindowTitle">
+				<source>Projects</source>
+				<target>Projects</target>
+			</trans-unit>
+			<trans-unit id="ProjectDetail_WindowTitleNew" resname="ProjectDetail_WindowTitleNew">
+				<source>New Project</source>
+				<target>New Project</target>
+			</trans-unit>
+			<trans-unit id="ProjectDetail_WindowTitle" resname="ProjectDetail_WindowTitle">
+				<source>Project: {1}</source>
+				<target>Project: {1}</target>
+			</trans-unit>
+			<trans-unit id="TaskDetail_WindowTitle" resname="TaskDetail_WindowTitle">
+				<source>Task: {1}</source>
+				<target>Task: {1}</target>
+			</trans-unit>
+			<trans-unit id="ProjectOutput_Count" resname="ProjectOutput_Count">
+				<source>{1} of {2} projects</source>
+				<target>{1} of {2} projects</target>
+			</trans-unit>
+			<trans-unit id="TaskOutput_Count" resname="TaskOutput_Count">
+				<source>{1} tasks</source>
+				<target>{1} tasks</target>
+			</trans-unit>
+			<trans-unit id="AlertProjectNameMandatory" resname="AlertProjectNameMandatory">
+				<source>The project name is mandatory.</source>
+				<target>The project name is mandatory.</target>
+			</trans-unit>
+			<trans-unit id="DeleteProject_WindowTitle" resname="DeleteProject_WindowTitle">
+				<source>Delete Project</source>
+				<target>Delete Project</target>
+			</trans-unit>
+			<trans-unit id="DeleteProject_Title" resname="DeleteProject_Title">
+				<source>Delete the project "{1}"?</source>
+				<target>Delete the project "{1}"?</target>
+			</trans-unit>
+			<trans-unit id="DeleteProject_TitleDefault" resname="DeleteProject_TitleDefault">
+				<source>Delete this project?</source>
+				<target>Delete this project?</target>
+			</trans-unit>
+			<trans-unit id="DeleteProject_Message" resname="DeleteProject_Message">
+				<source>You can't undo this action.</source>
+				<target>You can't undo this action.</target>
+			</trans-unit>
+			<trans-unit id="ConfirmGenerateData" resname="ConfirmGenerateData">
+				<source>Replace all projects and tasks with new sample data?</source>
+				<target>Replace all projects and tasks with new sample data?</target>
+			</trans-unit>
+			<trans-unit id="AlertButtonGenerate" resname="AlertButtonGenerate">
+				<source>Generate</source>
+				<target>Generate</target>
+			</trans-unit>
+			<trans-unit id="AlertSampleDataGenerated" resname="AlertSampleDataGenerated">
+				<source>{1} projects and {2} tasks were generated.</source>
+				<target>{1} projects and {2} tasks were generated.</target>
+			</trans-unit>
+			<trans-unit id="Button_Cancel" resname="Button_Cancel">
+				<source>Cancel</source>
+				<target>Cancel</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

@@ -1,0 +1,28 @@
+/* ============================================================
+   DEMO_21_R5_FluentUI — macOS only
+   Liquid Glass (macOS Tahoe) draws rounded push buttons and
+   dropdowns from 27 px; classic macOS uses the standard 23 px.
+   Both selectors: 4D does not always match type.class at runtime.
+   ============================================================ */
+
+@media (form-theme: liquid-glass) {
+    .default {
+        height: 27px;
+    }
+
+    button.default,
+    dropdown.default {
+        height: 27px;
+    }
+}
+
+@media (form-theme: mac-classic) {
+    .default {
+        height: 23px;
+    }
+
+    button.default,
+    dropdown.default {
+        height: 23px;
+    }
+}

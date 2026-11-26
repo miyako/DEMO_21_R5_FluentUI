@@ -28,7 +28,6 @@
 		"onTimer",
 		"onBoundVariableChange"
 	],
-	"windowTitle": "window title",
 	"destination": "detailScreen",
 	"pages": [
 		{
@@ -47,7 +46,7 @@
 				},
 				"label_name": {
 					"type": "text",
-					"text": "Project",
+					"text": ":xliff:Label_Project",
 					"top": 7,
 					"left": 10,
 					"height": 16,
@@ -66,7 +65,7 @@
 				},
 				"label_manager": {
 					"type": "text",
-					"text": "Tracking",
+					"text": ":xliff:Label_ProgressTracking",
 					"top": 7,
 					"left": 270,
 					"height": 16,
@@ -75,7 +74,7 @@
 				},
 				"field_status": {
 					"type": "input",
-					"dataSource": "Form:C1466.status",
+					"dataSource": "Form:C1466.statusLabel",
 					"top": 52,
 					"left": 269,
 					"width": 110,
@@ -85,7 +84,7 @@
 				},
 				"label_clientValidationRequired": {
 					"type": "text",
-					"text": "Validation",
+					"text": ":xliff:Label_Validation",
 					"top": 7,
 					"left": 430,
 					"height": 16,

@@ -34,7 +34,7 @@
 				},
 				"label_name": {
 					"type": "text",
-					"text": "Project",
+					"text": ":xliff:Label_Project",
 					"top": 7,
 					"left": 10,
 					"height": 16,
@@ -55,7 +55,7 @@
 				},
 				"label_manager": {
 					"type": "text",
-					"text": "Progress Tracking",
+					"text": ":xliff:Label_ProgressTracking",
 					"top": 7,
 					"left": 270,
 					"height": 16,
@@ -74,17 +74,18 @@
 				},
 				"field_status": {
 					"type": "input",
-					"dataSource": "[Project:3]status:4",
+					"dataSource": "StatusLabel([Project:3]status:4)",
 					"top": 46,
 					"left": 270,
 					"width": 104,
 					"height": 17,
 					"borderStyle": "none",
-					"fill": "transparent"
+					"fill": "transparent",
+					"enterable": false
 				},
 				"label_clientValidationRequired": {
 					"type": "text",
-					"text": "Validation",
+					"text": ":xliff:Label_Validation",
 					"top": 7,
 					"left": 430,
 					"height": 16,

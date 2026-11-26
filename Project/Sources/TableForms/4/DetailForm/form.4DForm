@@ -28,7 +28,7 @@
 		"onTimer",
 		"onBoundVariableChange"
 	],
-	"windowTitle": "Task",
+	"windowTitle": ":xliff:Label_Task",
 	"destination": "detailScreen",
 	"pages": [
 		{
@@ -54,7 +54,7 @@
 					"action": "cancel",
 					"fontSize": 13,
 					"class": "toolbar-button",
-					"tooltip": "Cancel"
+					"tooltip": ":xliff:Toolbar_Cancel"
 				},
 				"bValidate": {
 					"type": "button",
@@ -66,7 +66,7 @@
 					"action": "accept",
 					"fontSize": 13,
 					"class": "toolbar-button",
-					"tooltip": "Save task"
+					"tooltip": ":xliff:Toolbar_SaveTask"
 				},
 				"bFirstRecord": {
 					"type": "button",
@@ -78,7 +78,7 @@
 					"action": "firstRecord",
 					"fontSize": 12,
 					"class": "toolbar-button",
-					"tooltip": "First task"
+					"tooltip": ":xliff:Toolbar_FirstTask"
 				},
 				"bPreviousRecord": {
 					"type": "button",
@@ -90,7 +90,7 @@
 					"action": "previousRecord",
 					"fontSize": 12,
 					"class": "toolbar-button",
-					"tooltip": "Previous task"
+					"tooltip": ":xliff:Toolbar_PreviousTask"
 				},
 				"bNextRecord": {
 					"type": "button",
@@ -102,7 +102,7 @@
 					"action": "nextRecord",
 					"fontSize": 12,
 					"class": "toolbar-button",
-					"tooltip": "Next task"
+					"tooltip": ":xliff:Toolbar_NextTask"
 				},
 				"bLastRecord": {
 					"type": "button",
@@ -114,9 +114,9 @@
 					"action": "lastRecord",
 					"fontSize": 12,
 					"class": "toolbar-button",
-					"tooltip": "Last task"
+					"tooltip": ":xliff:Toolbar_LastTask"
 				},
-				"bPrrint": {
+				"bPrint": {
 					"type": "button",
 					"top": 27,
 					"left": 756,
@@ -124,13 +124,13 @@
 					"height": 32,
 					"icon": "/RESOURCES/Images/Buttons/Print.png",
 					"sizingX": "move",
-					"method": "ObjectMethods/bPrrint.4dm",
+					"method": "ObjectMethods/bPrint.4dm",
 					"events": [
 						"onClick"
 					],
 					"fontSize": 13,
 					"class": "toolbar-button",
-					"tooltip": "Print"
+					"tooltip": ":xliff:Toolbar_Print"
 				},
 				"ToolbarBg1": {
 					"type": "rectangle",
@@ -155,7 +155,7 @@
 					"action": "deleteRecord",
 					"fontSize": 13,
 					"class": "toolbar-button",
-					"tooltip": "Delete task"
+					"tooltip": ":xliff:Toolbar_DeleteTask"
 				}
 			}
 		},
@@ -163,7 +163,7 @@
 			"objects": {
 				"Text": {
 					"type": "text",
-					"text": "Title",
+					"text": ":xliff:Label_Title",
 					"top": 100,
 					"left": 40,
 					"width": 215,
@@ -183,7 +183,7 @@
 				},
 				"Text2": {
 					"type": "text",
-					"text": "Assignee",
+					"text": ":xliff:Label_Assignee",
 					"top": 160,
 					"left": 40,
 					"width": 215,
@@ -201,7 +201,7 @@
 				},
 				"Text3": {
 					"type": "text",
-					"text": "Avancement",
+					"text": ":xliff:Label_Progress",
 					"top": 160,
 					"left": 457,
 					"width": 215,
@@ -209,27 +209,22 @@
 					"fontWeight": "bold",
 					"sizingX": "move"
 				},
-				"Popup Dropdown List": {
+				"popStatus": {
 					"type": "dropdown",
 					"left": 457,
-					"top": 120,
+					"top": 118,
 					"width": 171,
-					"height": 24,
 					"events": [
 						"onDataChange"
 					],
-					"dataSource": "[Task:4]status:3",
-					"choiceList": [
-						"To Do",
-						"In Progress",
-						"Pending",
-						"Completed"
-					],
-					"sizingX": "move"
+					"dataSource": "Form:C1466.statusDrop",
+					"sizingX": "move",
+					"method": "ObjectMethods/popStatus.4dm",
+					"class": "default"
 				},
 				"Text5": {
 					"type": "text",
-					"text": "Status",
+					"text": ":xliff:Label_Status",
 					"top": 100,
 					"left": 457,
 					"width": 215,
@@ -239,7 +234,7 @@
 				},
 				"Text1": {
 					"type": "text",
-					"text": "Comment",
+					"text": ":xliff:Label_Comment",
 					"top": 220,
 					"left": 40,
 					"width": 215,

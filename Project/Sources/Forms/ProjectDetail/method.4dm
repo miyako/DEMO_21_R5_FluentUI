@@ -2,16 +2,7 @@
 Case of 
 	: (Form event code:C388=On Load:K2:1)
 		
-		If (Form:C1466.project=Null:C1517)
-			// Creation mode
-			SET WINDOW TITLE:C213("New Project")
-			
-		Else 
-			// Edit mode
-			SET WINDOW TITLE:C213("Project: "+Form:C1466.name)
-			
-		End if 
-		
+		Form:C1466.updateWindowTitle()
 		Form:C1466.initDropDown()
 		
 		// Update button states

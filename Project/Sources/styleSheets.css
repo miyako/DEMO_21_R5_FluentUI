@@ -1,7 +1,28 @@
 /* ============================================================
-   DemoLiquidGlass — Form Stylesheet
-   Supports: prefers-color-scheme (light/dark)
+   DEMO_21_R5_FluentUI — Form Stylesheet (all platforms)
+   Colours per appearance: prefers-color-scheme (light/dark).
+   Control heights per form theme: styleSheets_mac.css (Liquid Glass)
+   and styleSheets_windows.css (Fluent UI).
    ============================================================ */
+
+/* Start screen tiles (custom buttons, white text on Fluent accent colours) */
+.tile {
+    stroke: #ffffff;
+    fontSize: 24px;
+    borderRadius: 8;
+}
+
+.tile-projects {
+    borderFillColor: #058981;
+}
+
+.tile-tables {
+    borderFillColor: #1f5f9d;
+}
+
+.tile-generate {
+    borderFillColor: #8764b8;
+}
 
 @media (prefers-color-scheme: light) {
     .data-grid {

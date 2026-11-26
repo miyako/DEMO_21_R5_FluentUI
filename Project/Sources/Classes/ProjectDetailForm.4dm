@@ -1,17 +1,17 @@
-// Projet form properties
+// Project form properties
 property name : Text
 property manager : Text
-property status : Text
+property status : Text  // Stored key ("To Do", "Pending", ...), see StatusKeys
 property notificationsEnabled : Boolean
 property clientValidationRequired : Boolean
 property progress : Integer
 property comments : Text
 property tasks : cs:C1710.TaskSelection
-property myDrop : Object
+property myDrop : Object  // Status dropdown showing localised labels, see StatusDropdown
 
 // Database and state properties
 property project : cs:C1710.ProjectEntity  // Reference to the database entity
-property isNew : Boolean  // True if creating new contact, False if editing existing
+property isNew : Boolean  // True if creating a new project, False if editing existing
 property currentIndex : Integer  // Current position in the selection
 property maxIndex : Integer  // Selection size
 
@@ -53,27 +53,20 @@ Function loadEntity($entity : cs:C1710.ProjectEntity)
 	This:C1470.syncDropDownFromStatus()
 	
 Function initDropDown
-	If (This:C1470.myDrop=Null:C1517)
-		This:C1470.myDrop:=New object:C1471
-		This:C1470.myDrop.values:=New collection:C1472("To Do"; "Pending"; "In Progress"; "Completed")
-	End if 
-	
-	This:C1470.syncDropDownFromStatus()
+	// Labels are read in the current language each time the form loads
+	This:C1470.myDrop:=StatusDropdown(This:C1470.status)
 	
 Function syncDropDownFromStatus
-	var $statusToUse : Text
-	
 	If (This:C1470.myDrop=Null:C1517)
 		return 
 	End if 
 	
-	$statusToUse:=This:C1470.status
-	If (($statusToUse="") | (This:C1470.myDrop.values.indexOf($statusToUse)=-1))
-		$statusToUse:="To Do"
+	var $index:=StatusKeys().indexOf(This:C1470.status)
+	If ($index<0)
+		$index:=0
 	End if 
-	
-	This:C1470.myDrop.currentValue:=$statusToUse
-	This:C1470.myDrop.index:=This:C1470.myDrop.values.indexOf($statusToUse)
+	This:C1470.myDrop.index:=$index
+	This:C1470.myDrop.currentValue:=This:C1470.myDrop.values[$index]
 	
 Function save
 	If (This:C1470.project=Null:C1517)
@@ -81,8 +74,8 @@ Function save
 		This:C1470.project:=ds:C1482.Project.new()
 	End if 
 	
-	If (This:C1470.myDrop#Null:C1517)
-		This:C1470.status:=This:C1470.myDrop.currentValue
+	If (This:C1470.myDrop#Null:C1517) && (This:C1470.myDrop.index>=0)
+		This:C1470.status:=StatusKeys()[This:C1470.myDrop.index]
 	End if 
 	
 	This:C1470.project.name:=This:C1470.name
@@ -104,18 +97,22 @@ Function save
 Function next
 	This:C1470.loadEntity(This:C1470.project.next())
 	Form:C1466.updateNavigationButtons()
+	Form:C1466.updateWindowTitle()
 	
 Function previous
 	This:C1470.loadEntity(This:C1470.project.previous())
 	Form:C1466.updateNavigationButtons()
+	Form:C1466.updateWindowTitle()
 	
 Function first
 	This:C1470.loadEntity(This:C1470.project.first())
 	Form:C1466.updateNavigationButtons()
+	Form:C1466.updateWindowTitle()
 	
 Function last
 	This:C1470.loadEntity(This:C1470.project.last())
 	Form:C1466.updateNavigationButtons()
+	Form:C1466.updateWindowTitle()
 	
 Function canGoNext : Boolean
 	return This:C1470.currentIndex<This:C1470.maxIndex
@@ -128,6 +125,13 @@ Function canGoFirst : Boolean
 	
 Function canGoLast : Boolean
 	return This:C1470.currentIndex<This:C1470.maxIndex
+	
+Function updateWindowTitle
+	If (This:C1470.project=Null:C1517)
+		SET WINDOW TITLE:C213(Localized string("ProjectDetail_WindowTitleNew"))
+	Else 
+		SET WINDOW TITLE:C213(LocalizedFormat("ProjectDetail_WindowTitle"; [This:C1470.name]))
+	End if 
 	
 Function updateNavigationButtons
 	// Disable all navigation buttons in create mode

@@ -5,7 +5,7 @@
 	},
 	"windowSizingX": "variable",
 	"windowSizingY": "variable",
-	"windowMinWidth": 560,
+	"windowMinWidth": 680,
 	"windowMinHeight": 0,
 	"windowMaxWidth": 32767,
 	"windowMaxHeight": 32767,
@@ -16,7 +16,7 @@
 		"onDoubleClick",
 		"onTimer"
 	],
-	"windowTitle": "Projects",
+	"windowTitle": ":xliff:ProjectList_WindowTitle",
 	"destination": "detailScreen",
 	"pages": [
 		{
@@ -25,9 +25,10 @@
 					"type": "rectangle",
 					"top": 20,
 					"left": 20,
-					"width": 520,
+					"width": 640,
 					"height": 46,
-					"class": "toolbar-surface"
+					"class": "toolbar-surface",
+					"sizingX": "grow"
 				},
 				"bEdit": {
 					"type": "button",
@@ -42,7 +43,7 @@
 					],
 					"class": "toolbar-button",
 					"method": "ObjectMethods/bEdit.4dm",
-					"tooltip": "Edit project"
+					"tooltip": ":xliff:Toolbar_EditProject"
 				},
 				"bAdd": {
 					"type": "button",
@@ -57,7 +58,7 @@
 					],
 					"class": "toolbar-button",
 					"method": "ObjectMethods/bAdd.4dm",
-					"tooltip": "Add project"
+					"tooltip": ":xliff:Toolbar_AddProject"
 				},
 				"bDrop": {
 					"type": "button",
@@ -72,13 +73,13 @@
 					],
 					"class": "toolbar-button",
 					"method": "ObjectMethods/bDrop.4dm",
-					"tooltip": "Delete project"
+					"tooltip": ":xliff:Toolbar_DeleteProject"
 				},
 				"bPrint": {
 					"type": "button",
 					"text": "",
 					"top": 27,
-					"left": 492,
+					"left": 612,
 					"width": 38,
 					"height": 32,
 					"sizingX": "move",
@@ -88,11 +89,11 @@
 					],
 					"class": "toolbar-button",
 					"method": "ObjectMethods/bPrint.4dm",
-					"tooltip": "Print"
+					"tooltip": ":xliff:Toolbar_Print"
 				},
 				"Input": {
 					"type": "input",
-					"left": 274,
+					"left": 394,
 					"top": 32,
 					"width": 208,
 					"height": 22,
@@ -106,13 +107,13 @@
 						"onAfterKeystroke"
 					],
 					"method": "ObjectMethods/Input.4dm",
-					"placeholder": "Search...",
+					"placeholder": ":xliff:Toolbar_SearchPlaceholder",
 					"paddingBottom": 2
 				},
 				"btnDel": {
 					"type": "button",
 					"top": 33,
-					"left": 439,
+					"left": 559,
 					"width": 20,
 					"height": 20,
 					"events": [
@@ -127,7 +128,7 @@
 				"btnSearch": {
 					"type": "button",
 					"top": 33,
-					"left": 461,
+					"left": 581,
 					"width": 20,
 					"height": 20,
 					"events": [
@@ -156,7 +157,7 @@
 						"onClick"
 					],
 					"class": "toolbar-button",
-					"tooltip": "Back",
+					"tooltip": ":xliff:Toolbar_Back",
 					"action": "cancel"
 				}
 			},
@@ -177,7 +178,7 @@
 					"type": "listbox",
 					"left": 20,
 					"top": 86,
-					"width": 520,
+					"width": 640,
 					"height": 341,
 					"events": [
 						"onClick",
@@ -197,84 +198,96 @@
 					"columns": [
 						{
 							"header": {
-								"text": "Name",
+								"text": ":xliff:Label_Name",
 								"name": "Header1",
 								"class": "data-grid-header"
 							},
 							"name": "Column1",
 							"footer": {
-								"name": "Footer1"
+								"name": "Footer1",
+								"truncateMode": "none"
 							},
 							"dataSource": "This:C1470.name",
-							"minWidth": 140,
+							"minWidth": 200,
 							"maxWidth": 300,
-							"width": 140
+							"width": 260,
+							"truncateMode": "none"
 						},
 						{
 							"header": {
 								"name": "Header2",
-								"text": "Manager",
+								"text": ":xliff:Label_Manager",
 								"class": "data-grid-header"
 							},
 							"name": "Column2",
 							"footer": {
-								"name": "Footer2"
+								"name": "Footer2",
+								"truncateMode": "none"
 							},
 							"dataSource": "This:C1470.manager",
-							"minWidth": 120,
-							"maxWidth": 300
+							"minWidth": 100,
+							"maxWidth": 300,
+							"width": 110,
+							"truncateMode": "none"
 						},
 						{
 							"header": {
 								"name": "Header4",
-								"text": "Status",
+								"text": ":xliff:Label_Status",
 								"class": "data-grid-header"
 							},
 							"name": "Column4",
-							"dataSource": "This:C1470.status",
+							"dataSource": "This:C1470.statusLabel",
 							"footer": {
-								"name": "Footer4"
+								"name": "Footer4",
+								"truncateMode": "none"
 							},
 							"width": 90,
 							"minWidth": 90,
-							"maxWidth": 120
+							"maxWidth": 120,
+							"truncateMode": "none"
 						},
 						{
 							"header": {
 								"name": "Header5",
-								"text": "Progress",
+								"text": ":xliff:Label_Progress",
 								"class": "data-grid-header"
 							},
 							"name": "Column5",
 							"dataSource": "This:C1470.progress",
 							"dataSourceTypeHint": "number",
 							"footer": {
-								"name": "Footer5"
+								"name": "Footer5",
+								"truncateMode": "none"
 							},
 							"numberFormat": "##0%",
-							"width": 80,
+							"width": 70,
 							"enterable": false,
-							"minWidth": 80,
-							"maxWidth": 80
+							"minWidth": 70,
+							"maxWidth": 70,
+							"truncateMode": "none"
 						},
 						{
 							"header": {
 								"name": "Header3",
-								"text": "Validation",
+								"text": ":xliff:Label_Validation",
 								"class": "data-grid-header"
 							},
 							"name": "Column3",
 							"footer": {
-								"name": "Footer3"
+								"name": "Footer3",
+								"truncateMode": "none"
 							},
 							"dataSource": "This:C1470.clientValidationRequired",
 							"dataSourceTypeHint": "boolean",
 							"textAlign": "center",
 							"width": 80,
 							"minWidth": 80,
-							"maxWidth": 80
+							"maxWidth": 80,
+							"truncateMode": "none"
 						}
-					]
+					],
+					"resizingMode": "legacy"
 				}
 			}
 		}

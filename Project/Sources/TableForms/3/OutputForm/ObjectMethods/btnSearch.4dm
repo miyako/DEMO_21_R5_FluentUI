@@ -6,10 +6,21 @@ Case of
 		// Update visibility of clear button based on search text
 		OBJECT SET VISIBLE:C603(*; "btnDel"; Form:C1466.search#"")
 		
-		$search:="@"+Form:C1466.search+"@"
-		// Execute the search immediately
+		var $search : Text:="@"+Form:C1466.search+"@"
+		
+		// Statuses are stored as keys: also match the localised labels
+		var $keys:=[]
+		var $key : Text
+		For each ($key; StatusKeys())
+			If (StatusLabel($key)=$search) || ($key=$search)
+				$keys.push($key)
+			End if 
+		End for each 
+		
 		QUERY:C277([Project:3]; [Project:3]name:2=$search; *)
-		QUERY:C277([Project:3];  | ; [Project:3]manager:3=$search; *)
-		QUERY:C277([Project:3];  | ; [Project:3]status:4=$search)
+		For each ($key; $keys)
+			QUERY:C277([Project:3];  | ; [Project:3]status:4=$key; *)
+		End for each 
+		QUERY:C277([Project:3];  | ; [Project:3]manager:3=$search)
 		
 End case 

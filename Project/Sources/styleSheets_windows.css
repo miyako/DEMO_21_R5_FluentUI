@@ -1,0 +1,28 @@
+/* ============================================================
+   DEMO_21_R5_FluentUI — Windows only
+   Fluent UI (Windows 11, 4D 21 R2+): same 27 px as Liquid Glass so
+   forms keep one layout on both platforms; classic Windows: 24 px.
+   Both selectors: 4D does not always match type.class at runtime.
+   ============================================================ */
+
+@media (form-theme: fluent-ui) {
+    .default {
+        height: 27px;
+    }
+
+    button.default,
+    dropdown.default {
+        height: 27px;
+    }
+}
+
+@media (form-theme: win-classic) {
+    .default {
+        height: 24px;
+    }
+
+    button.default,
+    dropdown.default {
+        height: 24px;
+    }
+}

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+	<file datatype="plaintext" original="fields" source-language="en" target-language="en">
+		<body>
+			<trans-unit id="Label_Project" resname="Label_Project">
+				<source>Project</source>
+				<target>Project</target>
+			</trans-unit>
+			<trans-unit id="Label_Task" resname="Label_Task">
+				<source>Task</source>
+				<target>Task</target>
+			</trans-unit>
+			<trans-unit id="Label_ProjectName" resname="Label_ProjectName">
+				<source>Project Name</source>
+				<target>Project Name</target>
+			</trans-unit>
+			<trans-unit id="Label_Name" resname="Label_Name">
+				<source>Name</source>
+				<target>Name</target>
+			</trans-unit>
+			<trans-unit id="Label_Manager" resname="Label_Manager">
+				<source>Manager</source>
+				<target>Manager</target>
+			</trans-unit>
+			<trans-unit id="Label_Status" resname="Label_Status">
+				<source>Status</source>
+				<target>Status</target>
+			</trans-unit>
+			<trans-unit id="Label_Progress" resname="Label_Progress">
+				<source>Progress</source>
+				<target>Progress</target>
+			</trans-unit>
+			<trans-unit id="Label_ProgressTracking" resname="Label_ProgressTracking">
+				<source>Progress Tracking</source>
+				<target>Progress Tracking</target>
+			</trans-unit>
+			<trans-unit id="Label_Validation" resname="Label_Validation">
+				<source>Validation</source>
+				<target>Validation</target>
+			</trans-unit>
+			<trans-unit id="Label_ClientValidationRequired" resname="Label_ClientValidationRequired">
+				<source>Client validation required</source>
+				<target>Client validation required</target>
+			</trans-unit>
+			<trans-unit id="Label_NotificationsEnabled" resname="Label_NotificationsEnabled">
+				<source>Notifications enabled</source>
+				<target>Notifications enabled</target>
+			</trans-unit>
+			<trans-unit id="Label_Comment" resname="Label_Comment">
+				<source>Comment</source>
+				<target>Comment</target>
+			</trans-unit>
+			<trans-unit id="Label_Tasks" resname="Label_Tasks">
+				<source>Tasks</source>
+				<target>Tasks</target>
+			</trans-unit>
+			<trans-unit id="Label_Title" resname="Label_Title">
+				<source>Title</source>
+				<target>Title</target>
+			</trans-unit>
+			<trans-unit id="Label_Assignee" resname="Label_Assignee">
+				<source>Assignee</source>
+				<target>Assignee</target>
+			</trans-unit>
+			<trans-unit id="Label_ID" resname="Label_ID">
+				<source>ID</source>
+				<target>ID</target>
+			</trans-unit>
+			<trans-unit id="Label_Yes" resname="Label_Yes">
+				<source>Yes</source>
+				<target>Yes</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

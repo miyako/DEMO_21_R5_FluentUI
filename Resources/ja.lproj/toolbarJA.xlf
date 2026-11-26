@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+	<file datatype="plaintext" original="toolbar" source-language="en" target-language="ja">
+		<body>
+			<trans-unit id="Toolbar_Back" resname="Toolbar_Back">
+				<source>Back</source>
+				<target>戻る</target>
+			</trans-unit>
+			<trans-unit id="Toolbar_Cancel" resname="Toolbar_Cancel">
+				<source>Cancel</source>
+				<target>キャンセル</target>
+			</trans-unit>
+			<trans-unit id="Toolbar_Save" resname="Toolbar_Save">
+				<source>Save</source>
+				<target>保存</target>
+			</trans-unit>
+			<trans-unit id="Toolbar_Print" resname="Toolbar_Print">
+				<source>Print</source>
+				<target>印刷</target>
+			</trans-unit>
+			<trans-unit id="Toolbar_Add" resname="Toolbar_Add">
+				<source>Add</source>
+				<target>追加</target>
+			</trans-unit>
+			<trans-unit id="Toolbar_Edit" resname="Toolbar_Edit">
+				<source>Edit</source>
+				<target>編集</target>
+			</trans-unit>
+			<trans-unit id="Toolbar_Delete" resname="Toolbar_Delete">
+				<source>Delete</source>
+				<target>削除</target>
+			</trans-unit>
+			<trans-unit id="Toolbar_First" resname="Toolbar_First">
+				<source>First</source>
+				<target>最初へ</target>
+			</trans-unit>
+			<trans-unit id="Toolbar_Previous" resname="Toolbar_Previous">
+				<source>Previous</source>
+				<target>前へ</target>
+			</trans-unit>
+			<trans-unit id="Toolbar_Next" resname="Toolbar_Next">
+				<source>Next</source>
+				<target>次へ</target>
+			</trans-unit>
+			<trans-unit id="Toolbar_Last" resname="Toolbar_Last">
+				<source>Last</source>
+				<target>最後へ</target>
+			</trans-unit>
+			<trans-unit id="Toolbar_SaveProject" resname="Toolbar_SaveProject">
+				<source>Save project</source>
+				<target>プロジェクトを保存</target>
+			</trans-unit>
+			<trans-unit id="Toolbar_AddProject" resname="Toolbar_AddProject">
+				<source>Add project</source>
+				<target>プロジェクトを追加</target>
+			</trans-unit>
+			<trans-unit id="Toolbar_EditProject" resname="Toolbar_EditProject">
+				<source>Edit project</source>
+				<target>プロジェクトを編集</target>
+			</trans-unit>
+			<trans-unit id="Toolbar_DeleteProject" resname="Toolbar_DeleteProject">
+				<source>Delete project</source>
+				<target>プロジェクトを削除</target>
+			</trans-unit>
+			<trans-unit id="Toolbar_PrintProject" resname="Toolbar_PrintProject">
+				<source>Print project</source>
+				<target>プロジェクトを印刷</target>
+			</trans-unit>
+			<trans-unit id="Toolbar_FirstProject" resname="Toolbar_FirstProject">
+				<source>First project</source>
+				<target>最初のプロジェクト</target>
+			</trans-unit>
+			<trans-unit id="Toolbar_PreviousProject" resname="Toolbar_PreviousProject">
+				<source>Previous project</source>
+				<target>前のプロジェクト</target>
+			</trans-unit>
+			<trans-unit id="Toolbar_NextProject" resname="Toolbar_NextProject">
+				<source>Next project</source>
+				<target>次のプロジェクト</target>
+			</trans-unit>
+			<trans-unit id="Toolbar_LastProject" resname="Toolbar_LastProject">
+				<source>Last project</source>
+				<target>最後のプロジェクト</target>
+			</trans-unit>
+			<trans-unit id="Toolbar_SaveTask" resname="Toolbar_SaveTask">
+				<source>Save task</source>
+				<target>タスクを保存</target>
+			</trans-unit>
+			<trans-unit id="Toolbar_DeleteTask" resname="Toolbar_DeleteTask">
+				<source>Delete task</source>
+				<target>タスクを削除</target>
+			</trans-unit>
+			<trans-unit id="Toolbar_FirstTask" resname="Toolbar_FirstTask">
+				<source>First task</source>
+				<target>最初のタスク</target>
+			</trans-unit>
+			<trans-unit id="Toolbar_PreviousTask" resname="Toolbar_PreviousTask">
+				<source>Previous task</source>
+				<target>前のタスク</target>
+			</trans-unit>
+			<trans-unit id="Toolbar_NextTask" resname="Toolbar_NextTask">
+				<source>Next task</source>
+				<target>次のタスク</target>
+			</trans-unit>
+			<trans-unit id="Toolbar_LastTask" resname="Toolbar_LastTask">
+				<source>Last task</source>
+				<target>最後のタスク</target>
+			</trans-unit>
+			<trans-unit id="Toolbar_SearchProject" resname="Toolbar_SearchProject">
+				<source>Search projects</source>
+				<target>プロジェクトを検索</target>
+			</trans-unit>
+			<trans-unit id="Toolbar_ClearSearch" resname="Toolbar_ClearSearch">
+				<source>Clear search</source>
+				<target>検索をクリア</target>
+			</trans-unit>
+			<trans-unit id="Toolbar_SearchPlaceholder" resname="Toolbar_SearchPlaceholder">
+				<source>Search…</source>
+				<target>検索…</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>
